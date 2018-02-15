@@ -1,7 +1,6 @@
 ---
 title: "Angular Combine Multiple Subscription Requests"
 date: 2018-02-15T10:23:48+01:00
-draft: true
 ---
 
 When using the async pipe with multiple subscriptions on the store there will be multiple options requests, the actual requests are combined to one request.
