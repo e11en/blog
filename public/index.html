@@ -27,6 +27,23 @@
 <section class="section">
   <div class="container">
     
+    <article>
+      <h2 class="subtitle is-6">February 15, 2018</h2>
+      <h1 class="title"><a href="http://blog.ellenlangelaar.nl/posts/angular-ngrx-state-dependent-actions/">Angular Ngrx State Dependent Actions</a></h1>
+      <div class="content">
+        C depends on B -&gt; B depends on A.
+ First, notice that I am setting the value of the courses property to the result of the switchMap() operator. I use the do() operator to tranparently perform an action (or side effect), in this case, to dispatch() the LoadCoursesForUserAction action. The do() operator will receive the user that is emitted from the observable that is created using the select() method. Finally, using the switchMap() operator, the inner observable (obtaining the user) is complete, returning the observable of the array of Course objects.
+        
+        ...<a class="button is-link" href="http://blog.ellenlangelaar.nl/posts/angular-ngrx-state-dependent-actions/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
   </div>
 </section>
 <section class="section">
