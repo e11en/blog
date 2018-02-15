@@ -1,0 +1,4 @@
+baseURL = "http://blog.ellenlangelaar.nl"
+languageCode = "en-us"
+title = "Coding Blog"
+theme = "hemingway"
