@@ -28,7 +28,7 @@ endStream:     ---1----2--3----4------5-->
 ## Buffer
 This method periodically gathers emitted items. We can either give only a `bufferClosingSelector` or add a `bufferOpenings` as well.
 
-![Buffer example](/static/images/js-observables/buffer.png)
+![Buffer example](/images/js-observables/buffer.png)
 
 ## Filter
 This does exactly what you think it does, it filters the stream output based on your given criteria.
