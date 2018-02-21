@@ -78,7 +78,7 @@ stream B:                -----b-------c---->
 endStream: ----A--------------B-------C---->
 ```
 
-## Forjoin
+## Forkjoin
 Equivalent of `Promise.all()`, give back all the values when all the streams are completed.
 
 ```
