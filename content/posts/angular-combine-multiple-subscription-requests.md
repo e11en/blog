@@ -8,34 +8,38 @@ To combine the different request we can use `share()`.
 
 HTML template example:
 
-        <ama-module-menu>
-            [course]="course | async"
-        ></ama-module-menu>
-        <ama-module-content>
-            [course]="course | async
-        ></ama-module-content>
+```html
+<ama-module-menu>
+    [course]="course | async"
+></ama-module-menu>
+<ama-module-content>
+    [course]="course | async
+></ama-module-content>
+```
 
 Your filling the course observable use the `share()` operator.
 
-        ngOnInit() {
-            this.course = this.activatedRoute.paramMap
-                .takeWhile(() => this.alive)
-                .do(params => this.store.dispatch(new LoadCourseAction({ id: params.get('courseId') })))
-                .switchMap(() => this.store.select(getCourse))
-                .share()
-        }
+```js
+ngOnInit() {
+    this.course = this.activatedRoute.paramMap
+        .takeWhile(() => this.alive)
+        .do(params => this.store.dispatch(new LoadCourseAction({ id: params.get('courseId') })))
+        .switchMap(() => this.store.select(getCourse))
+        .share()
+}
 
-        ngOnDestroy() {
-            this.alive = false;
-        }
-
+ngOnDestroy() {
+    this.alive = false;
+}
+```
 
 Side note:
 If you use `*ngIf` result binding you avoid the duplicate requests as well.
 
-        <ama-module-menu *ngIf="course | async as c">
-            [course]="c"
-        </ama-module-menu>
-
+```html
+<ama-module-menu *ngIf="course | async as c">
+    [course]="c"
+</ama-module-menu>
+```
 
 Source: [RxJS Antipatterns](http://brianflove.com/2017/11/01/ngrx-anti-patterns/)
