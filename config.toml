@@ -1,5 +1,9 @@
 baseURL = "http://blog.ellenlangelaar.nl"
 languageCode = "en-us"
 title = "Coding Blog"
-theme = "hemingway"
+theme = "codeblog"
 googleAnalytics = "UA-37182945-5"
+copyright = "&copy; <a href='https://ellenlangelaar.nl'>Ellen Langelaar</a> 2018"
+
+[params.social]
+github = "e11en"
