@@ -21,7 +21,8 @@ Marble diagrams are a way to visually represent Observables. The marbles represe
 - `expectObservable(actual: Observable<T>).toBe(marbles: string, values?: object, error?: any)` - schedules an assertion for when the TestScheduler flushes. The TestScheduler will automatically flush at the end of your jasmine `it` block.
 - `expectSubscriptions(actualSubscriptionLogs: SubscriptionLog[]).toBe(subscriptionMarbles: string)` - like `expectObservable` schedules an assertion for when the testScheduler flushes. Both `cold()` and `hot()` return an observable with a property subscriptions of type `SubscriptionLog[]`. Give `subscriptions` as parameter to `expectSubscriptions` to assert whether it matches the subscriptionsMarbles marble diagram given in `toBe()`.
 
- ## Examples
+## Examples
+
  - `hot('--a--b')` will emit `"a"` and `"b"`
  - `hot('--a--b', { a: 1, b: 2 })` will emit `1` and `2`
  - `hot('---#')` will emit error `"error"`
@@ -30,7 +31,7 @@ Marble diagrams are a way to visually represent Observables. The marbles represe
  - `hot('-a-^-b--|')` on frame -20 emit a, then on frame 20 emit b, and on frame 50, complete.
  - `hot('-----(a|)')` on frame 50, emit a and complete.
 
-### Basic test
+## Basic test
 ```js
 var e1 = hot('----a--^--b-------c--|');
 var e2 = hot(  '---d-^--e---------f-----|');
