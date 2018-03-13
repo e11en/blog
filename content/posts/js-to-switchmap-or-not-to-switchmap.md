@@ -1,5 +1,5 @@
 ---
-title: "To Switchmap Or To Not Switchmap"
+title: "To Switchmap Or Not To Switchmap"
 date: 2018-03-13T11:54:59+01:00
 ---
 
