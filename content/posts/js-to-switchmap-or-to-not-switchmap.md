@@ -3,8 +3,6 @@ title: "To Switchmap Or To Not Switchmap"
 date: 2018-03-13T11:54:59+01:00
 ---
 
-Note: This article will be extended over time.
-
 # What the map
 When we want to use a flattening operator you usually come across `switchMap` but this is not the only map operator we have. We have a total of 4 maps to choose from:
 
