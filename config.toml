@@ -1,4 +1,4 @@
-baseURL = "http://blog.ellenlangelaar.nl"
+baseURL = "https://blog.ellenlangelaar.nl"
 languageCode = "en-us"
 title = "Coding Blog"
 theme = "codeblog"
