@@ -7,3 +7,6 @@ copyright = "&copy; <a href='https://ellenlangelaar.nl'>Ellen Langelaar</a> 2018
 
 [params.social]
 github = "e11en"
+
+[params.info]
+homeTitle = "EllenLangelaar Coding Blog"
